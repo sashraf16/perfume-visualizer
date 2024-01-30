@@ -1,0 +1,28 @@
+<p>visualizer-home works!</p>
+
+<div class="grid w-screen place-items-center">
+    <visualizer-display></visualizer-display>
+</div>
+
+
+<div *ngIf="isLoading$ | async" >
+    yes loading
+</div>
+{{ isLoading$ | async }}
+
+{{test | async}}
+{{test2 }}
+
+
+<div class="gap-8 md:columns-3">
+
+    <div>
+        <visualizer-dropdown></visualizer-dropdown>
+    </div>
+    <div>
+        <visualizer-dropdown></visualizer-dropdown>
+    </div>
+    <div>
+        <visualizer-dropdown></visualizer-dropdown>
+    </div>
+</div>
