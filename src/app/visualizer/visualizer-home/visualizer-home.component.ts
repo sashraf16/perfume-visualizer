@@ -29,12 +29,12 @@ export class VisualizerHomeComponent implements OnInit{
   ngOnInit(): void {
     this.store.dispatch(actions.getMaterials());
         this.isLoading$ = this.store.pipe(select(selectors.isLoadingSelector));
-    this.test = this.store.pipe(select(selectors.allMaterialsSelector));
-    this.test2 = this.store.select((store) => store.MaterialsState.Materials);
-    this.store.select(selectors.allMaterialsSelector).subscribe(x => {
-      this.test2 = x;
-      console.log(this.test2);
-      console.log('hi');
-    })
+    // this.test = this.store.pipe(select(selectors.allMaterialsSelector));
+    // this.test2 = this.store.select((store) => store.MaterialsState.Materials);
+    // this.store.select(selectors.allMaterialsSelector).subscribe(x => {
+    //   this.test2 = x;
+    //   console.log(this.test2);
+    //   console.log('hi');
+    // })
   }
 }
